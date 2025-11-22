@@ -1,0 +1,341 @@
+/* Olga's CSS file for the new  REPORTBE website 
+	created in April 2025   */
+
+ 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+
+	background-color: white;
+	color: #515151; /*refers to text color*/
+	font-family:  Trebuchet, Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5em;
+	line-height: 2em;
+	/*font-family:   Georgia, Cambria, Hoefler Text, Times New Roman, serif;*/
+	
+	/*font-family: "Hoefler Text", Georgia, Times, serif;*/
+	/*Trebuchet, Verdana, Geneva, Tahoma, sans-serif*/
+}
+
+
+#allContent { /*this is teh surrounding box for everything*/
+	padding-top: 20px;
+	width: 700px;
+	margin-bottom: 3em;
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: yellow; FOR TROUBLESHOOTING */
+}
+
+#banner {
+	
+	background-color: white;
+	color: black;
+	width:  700px;
+}
+
+#mainbox { /*this is the main content below the banner*/
+	padding-top: 20px;
+	width: 600px;
+	margin-bottom: 3em;
+	margin-top: 30px;
+	margin-left: 50px; /*to center mainbox, set Width + 2xMargin = width of allContent */
+	margin-right: auto;	
+}
+
+
+a {
+	color: #338DA1;
+	text-decoration: none;	
+}
+
+
+a:hover{
+	text-decoration: none;
+	/*background-color: #585241;*/
+	background-color: #BDDADE;
+	color: #52341C;
+}
+
+p{	
+	text-indent: 0em; /*notsure I want to keep this.  Yeah, maybe. */
+}
+
+p.entry{
+	padding-left: 50px;
+	margin-top: 30px;
+	background-color: #DFE6DF;
+}
+
+p.mainentry{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 30px;
+	background-color: #DFE6DF;
+	font-size: 3em;
+	line-height: 2.5em;
+}
+
+
+p.highlight{
+	border: 2px dotted #52341C;
+	text-align: center;
+	font-style: italic;
+	padding: 2em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	
+}
+
+
+ #footer{
+	margin-top: 50px;
+ 	background-color: white;
+	color: gray;
+	font-size: 0.5em;
+	font-style: italic;
+ 	float: right;
+ 	padding-bottom: 20px;
+ }
+
+#footer li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 22px; /* this affects the horizontal spacing between list items */
+	margin-top: 15px;
+}
+
+
+
+
+
+/*not used yet*/
+
+
+#navigationContainer{
+	
+	padding: 40px;
+	text-align: center;
+	font-size: 15px;
+	
+}
+
+#navigationContainer li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 22px; /* this affects the horizontal spacing between list items */
+}
+
+
+
+
+p.wolfram{
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+
+
+#mainFrontpageContainer {
+	
+	margin-left: 340px;/*this equals the sidebar width plus 40 px*/
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 50px;
+	/*these effectively make the mainFrontPage
+	content's width = 1000-(sidebar:300)-2x(padding:60)
+	= 580px  */
+	background-color: #DFE6DF;
+	
+}
+
+#mainContainer{
+	/*this is for all pages but the font page*/
+	/*note that the entry class of <p> for mins has 50 px of left padding
+	so this means I need to plan for images to fit within 550 px */
+	width: 600px;
+	margin-left: 200px;
+	
+}
+
+.columnContainer{
+	width: 550px;
+	padding-bottom: 40px;
+	margin-top: 1px;
+	margin-bottom: 10px;
+}
+
+.leftColumn{
+	float: left;
+	width: 55%;
+	/*background-color: yellow;*/
+	padding-bottom: 4em;
+}
+
+.rightColumn{
+	float: right;
+	width: 45%;
+	padding-top: 5em;
+	/*background-color: gray;*/
+	font-size: x-large;
+	color: #bc0000;
+	/*font-style: italic;*/
+}
+
+h1, h2{
+	/*font-variant: small-caps;*/
+	text-transform: uppercase;
+	letter-spacing: 0.7em;
+	padding-bottom:  1em;
+	padding-top: 1em;
+	font: 2em Trebuchet, Calibri, sans-serif;
+}
+
+/* =p */
+
+
+
+.topicTitle{  /*this is used for Minutes topics titles */
+	border-bottom: dotted gray 2px;
+	background-image:url('images/fleur-de-lis.jpg');
+	background-repeat: no-repeat;
+	padding-left: 60px; 
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	font-size: 2em;
+	font-family: Courier, mono;
+}
+
+
+
+p.showcase{
+	width: 600px;
+	height: 700px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	background-image:url('images/calvetica.jpg');
+	background-repeat: no-repeat;
+	text-align: right;
+}
+
+p.quote{
+	width: 600px;
+	text-align: left;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 2em 2em 2em 4em;
+	padding: 0 .75em 0 1.5em;
+	border-left: 1px solid #BDDADE;
+	border-right: 0px solid #BDDADE;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+	}
+
+
+ul.entry{  /*to make bullets in entries look decent. Don't forget to instantiate the class in html */
+	
+	/*list-style-position: inside;*/
+	
+	list-style-type: circle;
+	padding-left: 60px;
+}
+
+p.announce{
+	border: 5px;
+	border-color: red;
+	padding: 4em;
+	/*margin-bottom: 1em;*/
+	text-indent: 0em;
+	/*text-align: center;*/	
+}
+
+.quoteEnlarge{ /*this is handy for showcasing a quoteblock within text. Remember to put it first, before the regular text */
+	width: 50%;
+	font-size: 30px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	float: right;
+	text-align: right;
+	line-height: 30px;
+	color: gray;
+	font-style: italic;
+}
+
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
+}
+ 
+blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+ 
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+ 
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+
+
+
+img.floatleft{
+	float: left;
+	margin: 1em;	
+}
+
+
+
+
+
+p.author{
+	text-align: right;
+	font-variant: small-caps;
+}
+
+
+
+div.img
+  {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border: none;
+  height: auto;
+  width: auto;
+  float: none;
+  text-align: center;
+  }
+
+
+ 
+ 
