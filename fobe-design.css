@@ -100,7 +100,8 @@ p.highlight{
 	font-size: 0.5em;
 	font-style: italic;
  	float: right;
- 	padding-bottom: 20px;
+ 	padding-bottom: 80px;
+ 	line-height: 1.2em;
  }
 
 #footer li{
